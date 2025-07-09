@@ -1,11 +1,11 @@
-# 📦 rtfCreator
+#  rtfCreator
 
 > A macro that allows you to easily create RTF files from your dataset
 ![スクリーンショット 2025-07-09 151558](https://github.com/user-attachments/assets/ce8b2b07-a7d8-4038-b3c3-57b3f1bec948)
 
 ---
 
-## 🔍 Overview
+##  Overview
 
 **`rtfCreator`** is a simple SAS macro that enables you to generate RTF tables by specifying:
 
@@ -19,7 +19,7 @@ Optionally, you can apply your own STYLE template or add extra formatting like h
 
 ---
 
-## 🧾 Parameters
+##  Parameters
 
 | Parameter    | Required | Description                                      |
 |--------------|----------|--------------------------------------------------|
@@ -37,9 +37,9 @@ Optionally, you can apply your own STYLE template or add extra formatting like h
 
 ---
 
-## 🚀 How to Use
+##  How to Use
 
-### 📌 Example A — Simple Table
+###  Example A — Simple Table
 ```sas
 %rtfcreator(
   DS       = sashelp.class,
