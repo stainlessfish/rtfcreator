@@ -19,6 +19,11 @@ Optionally, you can apply your own STYLE template or add extra formatting like h
 
 ---
 
+
+##  Version history
+0.1.0(9July2025) : Initial version
+---
+
 ##  Parameters
 
 | Parameter    | Required | Description                                      |
@@ -113,3 +118,9 @@ run;
 ,LINEVAR=BLINE
 );
 
+
+## What is SAS Packages?
+OncoPlotter is built on top of SAS Packages framework(SPF) developed by Bartosz Jablonski.
+For more information about SAS Packages framework, see SAS_PACKAGES.
+You can also find more SAS Packages(SASPACs) in SASPAC.
+---
