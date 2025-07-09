@@ -23,17 +23,17 @@ Optionally, you can apply your own STYLE template or add extra formatting like h
 
 | Parameter    | Required | Description                                      |
 |--------------|----------|--------------------------------------------------|
-| `DS`         | ✅       | Name of the input dataset                        |
-| `COLNUM`     | ✅       | Number of columns                                |
-| `VARLST`     | ✅       | List of variable names                           |
-| `JUSTLST`    | ✅       | List of justifications (`Left`, `Right`, etc.)   |
-| `WIDTHLST`   | ✅       | List of column widths                            |
-| `OUTFILE`    | ❌       | Output file name                                 |
-| `PAGEVAR`    | ❌       | Variable flag for page breaks                    |
-| `LINEVAR`    | ❌       | Variable flag for bottom borders                 |
-| `TBLHEAD`    | ❌       | Header text to appear at top of the table        |
-| `TBLFOOT`    | ❌       | Footer text to appear at bottom of the table     |
-| `STYLENAM`   | ❌       | RTF style template name                          |
+| `DS`         |  Y      | Name of the input dataset                        |
+| `COLNUM`     |  Y      | Number of columns                                |
+| `VARLST`     |  Y      | List of variable names                           |
+| `JUSTLST`    |  Y      | List of justifications (`Left`, `Right`, etc.)   |
+| `WIDTHLST`   |  Y      | List of column widths                            |
+| `OUTFILE`    |  N      | Output file name                                 |
+| `PAGEVAR`    |  N      | Variable flag for page breaks                    |
+| `LINEVAR`    |  N      | Variable flag for bottom borders                 |
+| `TBLHEAD`    |  N      | Header text to appear at top of the table        |
+| `TBLFOOT`    |  N      | Footer text to appear at bottom of the table     |
+| `STYLENAM`   |  N      | RTF style template name                          |
 
 ---
 
