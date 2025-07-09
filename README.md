@@ -116,7 +116,6 @@ run;
 ,VARLST  =name sex 
 ,JUSTLST =Left Center
 ,WIDTHLST=300 150 
-,PAGEVAR=PAGEBRK
 ,LINEVAR=BLINE
 );
 ```
