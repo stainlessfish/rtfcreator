@@ -48,3 +48,68 @@ Optionally, you can apply your own STYLE template or add extra formatting like h
   JUSTLST  = Left Center,
   WIDTHLST = 300 150
 );
+```
+
+### Example A  -- Simply;
+```sas
+%rtfcreator(DS=sashelp.class
+,COLNUM  =2
+,VARLST  =name sex 
+,JUSTLST =Left Center
+,WIDTHLST=300 150 
+);
+```
+
+### Example B -- use your STYLE template.;
+```sas
+%rtfcreator(DS=sashelp.class
+,COLNUM  =2
+,VARLST  =name sex 
+,JUSTLST =Left Center
+,WIDTHLST=300 150 
+,STYLENAM=Journal
+);
+```
+
+### Example C -- Add text outside the table, bottom or top;
+```sas
+%rtfCreator(DS=sashelp.class
+,COLNUM  =2
+,VARLST  =name sex 
+,JUSTLST =Left Center
+,WIDTHLST=300 150 
+,TBLHEAD=%str(Table Head)
+,TBLFOOT=%str(Table Foot)
+);
+```
+
+### Example D -- Page break (you need to create a page break flag variable in advance, e.g., XXX = 1).;
+```sas
+data RTFDS1;
+  set sashelp.class;
+  if _n_ eq 7 then PAGEBRK=1;
+run;
+%rtfcreator(DS=RTFDS1
+,COLNUM  =2
+,VARLST  =name sex 
+,JUSTLST =Left Center
+,WIDTHLST=300 150 
+,PAGEVAR=PAGEBRK
+);
+```
+
+### Example E -- adding a bottom border (you need to create a bottom border flag variable in advance, e.g., XXX = 1).;
+```sas
+data RTFDS2;
+  set sashelp.class;
+  if _n_ eq 7 then BLINE=1;
+run;
+%rtfcreator(DS=RTFDS2
+,COLNUM  =2
+,VARLST  =name sex 
+,JUSTLST =Left Center
+,WIDTHLST=300 150 
+,PAGEVAR=PAGEBRK
+,LINEVAR=BLINE
+);
+
