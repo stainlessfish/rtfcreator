@@ -1,7 +1,9 @@
 #  rtfCreator
 
 > A macro that allows you to easily create RTF files from your dataset
-![スクリーンショット 2025-07-09 151558](https://github.com/user-attachments/assets/ce8b2b07-a7d8-4038-b3c3-57b3f1bec948)
+
+
+![image](https://github.com/user-attachments/assets/ca68686e-e308-4dad-8a9e-ec6f40b38961)
 
 ---
 
