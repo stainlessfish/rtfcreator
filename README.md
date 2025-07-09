@@ -67,7 +67,7 @@ Optionally, you can apply your own STYLE template or add extra formatting like h
 );
 ```
 
-### Example B -- use your STYLE template.;
+### Example B -- use your STYLE template. (e.g. Journal);
 ```sas
 %rtfcreator(DS=sashelp.class
 ,COLNUM  =2
