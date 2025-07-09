@@ -48,18 +48,7 @@ Optionally, you can apply your own STYLE template or add extra formatting like h
 
 ##  How to Use
 
-###  Example A — Simple Table
-```sas
-%rtfcreator(
-  DS       = sashelp.class,
-  COLNUM   = 2,
-  VARLST   = name sex,
-  JUSTLST  = Left Center,
-  WIDTHLST = 300 150
-);
-```
-
-### Example A  -- Simply;
+### Example A  -- Simply Table;
 ```sas
 %rtfcreator(DS=sashelp.class
 ,COLNUM  =2
@@ -68,6 +57,10 @@ Optionally, you can apply your own STYLE template or add extra formatting like h
 ,WIDTHLST=300 150 
 );
 ```
+
+![image](https://github.com/user-attachments/assets/21a3b247-fd26-47f5-8509-30690e746fa7)
+
+---
 
 ### Example B -- use your STYLE template. (e.g. Journal);
 ```sas
@@ -80,6 +73,10 @@ Optionally, you can apply your own STYLE template or add extra formatting like h
 );
 ```
 
+![image](https://github.com/user-attachments/assets/05ae8971-0e57-4aed-ac10-0811ad101ce1)
+
+---
+
 ### Example C -- Add text outside the table, bottom or top;
 ```sas
 %rtfCreator(DS=sashelp.class
@@ -91,6 +88,10 @@ Optionally, you can apply your own STYLE template or add extra formatting like h
 ,TBLFOOT=%str(Table Foot)
 );
 ```
+
+![image](https://github.com/user-attachments/assets/ed41b190-2cbf-4c86-9aba-0436babd314a)
+
+---
 
 ### Example D -- Page break (you need to create a page break flag variable in advance, e.g., XXX = 1).;
 ```sas
@@ -107,6 +108,10 @@ run;
 );
 ```
 
+![image](https://github.com/user-attachments/assets/5da9b138-0105-4d3d-b9e7-64feff4227dc)
+
+---
+
 ### Example E -- adding a bottom border (you need to create a bottom border flag variable in advance, e.g., XXX = 1).;
 ```sas
 data RTFDS2;
@@ -121,6 +126,9 @@ run;
 ,LINEVAR=BLINE
 );
 ```
+![image](https://github.com/user-attachments/assets/8788d913-60b4-499a-907e-9352d1076666)
+
+
 
 # What is SAS Packages?
 The package is built on top of **SAS Packages framework(SPF)** created by Bartosz Jablonski.<br>
