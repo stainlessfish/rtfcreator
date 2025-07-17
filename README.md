@@ -3,8 +3,7 @@
 > A macro that allows you to easily create RTF files from your dataset
 
 
-![image](https://github.com/user-attachments/assets/ca68686e-e308-4dad-8a9e-ec6f40b38961)
-
+<img src="https://github.com/stainlessfish/rtfcreator/blob/main/rtfcreateor_megane.png" alt="pharmaforest" width="300" height="300"> 
 ---
 
 ##  Overview
